@@ -136,6 +136,8 @@ for (i = 0; i < bondFilms.length; i++) {
 
 console.log(bondTitles);
 
+// odd bonds
+
 let oddBonds = [];
 	for (i = 0; i < bondFilms.length; i++) {
 		if (bondFilms[i].year % 3 === 0) {
@@ -144,6 +146,14 @@ let oddBonds = [];
 	}
 
 console.log(oddBonds);
+let sum1 = 0;
+for (i = 0; i < bondFilms.length; i++) {
+	sum1 += parseInt(bondFilms[i].gross.replace("$",",",""));
+}
+
+console.log(bondFilms[0].films)
+console.log(sum1);
+
 
 
 
