@@ -93,11 +93,11 @@ const inception = {
            }
        }
    }
-}
+};
 
 inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = "null";
 
-console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo)
+console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo);
 
 // bond films
 
@@ -132,13 +132,18 @@ for (i = 0; i < bondFilms.length; i++) {
 
 		bondTitles.push(bondFilms[i].title);
 	
-}
+};
 
 console.log(bondTitles);
 
+let oddBonds = [];
+	for (i = 0; i < bondFilms.length; i++) {
+		if (bondFilms[i].year % 3 === 0) {
+			oddBonds.push(bondFilms[i].year);
+		}
+	}
 
-
-
+console.log(oddBonds);
 
 
 
